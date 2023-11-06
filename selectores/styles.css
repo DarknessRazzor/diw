@@ -1,0 +1,19 @@
+table, tr, td{
+    border: 1px solid black;
+    text-align: center;
+    font-family: Arial;
+    border-collapse: collapse;
+}
+.filaUno{
+    background-image: url("imagenes/fondo_gris.gif");
+}
+.columnaUno{
+    background-color: #E6F3FF;
+    
+}
+.celdasYellow{
+    background-color: #FFFFCC;
+}
+tr:hover td{
+    background-color: #FFFF66;
+}
