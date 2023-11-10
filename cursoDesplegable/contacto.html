@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curso</title>
+    <link rel="stylesheet" href="index.html" />
+    <link rel="stylesheet" href="css/contacto.css">
+  </head>
+  <body>
+    <div id="page">
+      <header>
+        <h1><img src="imgs/logo.png" >Curso de HTML5 y CSS3</h1>
+      </header>
+      <nav id="navegador">
+        <ul>
+          <li id="li1">Contenidos</li>
+          <li id="li2" class="dropdown">Vídeos
+            <ul id="menuDesplegable" class="dropdown-content">
+              <li><a href="#">vídeo1</a></li>
+              <li><a href="#">vídeo2</a></li>
+              <li><a href="#">vídeo3</a></li>
+            </ul>
+          </li>
+          <li id="li3">Contacto</li>
+        </ul>
+      </nav>
+      <main>
+
+      <div id="contenedorFormulario">
+        <h2>Contáctenos</h2>
+        <form>
+          <input type="text" name="nombre" placeholder="Escriba su nombre" list="nombres"required>
+          <label></label>
+          <input type="email" name="correo" placeholder="Escriba su email" list="correo"required>
+          <label></label>
+          <textarea name="mensaje" rows="10" cols="50" placeholder="Su mensaje..."></textarea><br><br>
+          <input type="submit" value="Enviar">
+          <datalist id="nombres">
+            <option value="Adrián"></option>
+            <option value="Óscar"></option>
+            <option value="Lucas"></option>
+            <option value="Alejandro"></option>
+          </datalist>
+          <datalist id="correo">
+            <option value="adrian@gmail.com"></option>
+          </datalist>
+        </form>
+      </div>
+      <footer>
+        <p>HTML5 y CSS3.<br />Diseño de interfaces web - 2DAW</p>
+      </footer>
+      </main>
+    </div>
+  </body>
+</html>
