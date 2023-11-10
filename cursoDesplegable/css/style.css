@@ -1,3 +1,14 @@
+@keyframes cabecera{
+    0%{
+        rotate: 0deg;
+    }
+    50%{
+        rotate: 180deg;
+    }
+    0%{
+        rotate: 0deg;
+    }
+}
 *{
     margin: 0px;
     padding: 0px;
@@ -33,6 +44,10 @@ header{
     padding-bottom: 20px;
     padding-left: 100px;
     padding-right: 100px;
+    
+}
+header>h1>img{
+    animation: cabecera 5s infinite;
 }
 nav{
     font-family: 'Courier New', Courier, monospace;
