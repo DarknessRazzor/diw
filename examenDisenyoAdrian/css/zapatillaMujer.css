@@ -1,0 +1,409 @@
+@keyframes cabecera{
+    0%{
+        rotate: 0deg;
+    }
+    50%{
+        rotate: 180deg;
+    }
+    0%{
+        rotate: 0deg;
+    }
+}
+/* header>h1>img{
+    animation: cabecera 5s infinite;
+} */
+@keyframes mueveChincheta1{
+    0%{
+        left: 0px;
+    }
+    100%{
+        left: 199px;
+    }
+}
+.moverChincheta1{
+    animation: mueveChincheta1 1s ease-in;
+}
+@keyframes animArticle1{
+    0%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate: -2deg;
+    }
+} 
+ .article1{
+    animation: animArticle1 0.5s 1s forwards;
+} 
+@keyframes mueveChincheta2{
+    0%{
+        left: 0px;
+    }
+    100%{
+        left: 120px;;
+    }
+}
+.moverChincheta2{
+    animation: mueveChincheta2 1s 1.5s forwards;
+}
+@keyframes mueveChincheta3{
+    0%{
+        left: 0px;
+    }
+    100%{
+        left: 30px;
+    }
+}
+.moverChincheta3{
+    animation: mueveChincheta3 1s 2s forwards;
+}
+@keyframes animArticle3{
+    0%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate: 2deg;
+    }
+}
+.article3{
+    animation: animArticle3 0.5s 3s forwards;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/*Cambiar el fondo, el body por completo*/
+body{
+    padding: 100px;
+    margin-top: 20px;
+    text-align: center;
+    background-image: url("/imgs/pexels-leandro-boogalu-1390403.jpg");
+    background-position: 25%;
+    background-repeat: no-repeat;
+    
+}
+/*PADDING: MARGEN INTERIOR MARGIN: MARGEN EXTERIOR*/
+/*El div general que va a englobar todo*/
+#page{
+    /*Con esto controlamos el ancho del div*/
+    width: 80em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+/*La cabecera de nuestra página web*/
+header{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.1em;
+    color: white;
+    border-bottom: 1px solid black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 100px;
+    
+}
+/*Este nav engloba los hiperenlaces para navegar por la página web*/
+nav{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.4em;
+    color: silver;
+    text-align: center;
+    height: 100px;
+    background-color: rgba(143, 114, 119, 0);
+    
+}
+/*Creamos una lista para hacer el menú desplegable*/
+li{
+    padding-top: 30px;
+    margin-top: 0px;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-bottom: 20px;
+    /*Con esto le quitamos el estilo al li*/
+    list-style: none;
+    /*Mostrar en modo columna los datos del li*/
+    display: inline-block;
+    text-align: center;
+    cursor: default;
+}
+td{
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.082);
+    border: 2px solid black;
+}
+/*Con el #cogemos el id y con el . cogemos las class*/
+#li1{
+    /*Este li1 corresponde al botón de contenidos al que le pasamos
+    una imagen de fondo, Contenidos*/
+    background-image: url("../imgs/book.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0px 0px 5px white;
+}
+#li2{
+    /*Lo mismo que el anterior pero para el li2, en este caso Vídeos*/
+    background-image: url("../imgs/film.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0px 0px 5px white;
+}
+#li3{
+    /*Lo mismo que el anterior pero para el li3, Contacto*/
+    background-image: url("../imgs/mail.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0px 0px 5px white;
+}
+/*si añadimos :hover es cuando el raton PASE POR ENCIMA DE LO QUE LE 
+HAYAMOS PUESTO EN PRIMERA INSTANCIA, en este caso cuando pase por encima
+de nuestro li1 li2 y li3*/
+#li1:hover{
+    text-shadow: 2px 2px 0px rgb(0, 132, 255);
+    transition: 0.5s;
+}
+#li2:hover{
+    text-shadow: 2px 2px 0px rgb(111, 0, 255)(51, 3, 51);
+    transition: 0.5s;
+}
+#li3:hover{
+    text-shadow: 2px 2px 0px rgb(111, 0, 255)(51, 3, 51);
+    transition: 0.5s;
+}
+
+/*Este div es la parte central de la página web, donde tenemos los móviles
+la descripción de cada tipo de lenguaje*/
+#content{
+    margin-bottom: 70px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.8em;
+    width: 50%;
+    height: 200px;
+    display: table;
+}
+
+#article{
+    border-style:solid;
+    width: 250px;
+    height: 200px;
+    border: 1px solid lightgray;
+    text-align: center;
+    line-height: 1.8em;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    margin: 100px;
+    float: left;   
+}
+/* formato que le pasamos a la descripción que está puesta debajo de cada imagen*/
+.article_hombre{
+    height: 400px;
+    width: 300px;
+    
+}
+.imagenes{
+   width: 100px;
+   height: 100px;
+}
+#zapatillaMujer{
+    background-image: url("/imgs/pexels-andrea-piacquadio-3764537.jpg");
+    background-repeat: no-repeat;
+    background-size: 120%;
+    float: left;
+    margin-top: 30px;
+    height: 450px;
+    width: 300px;
+    margin-left: 660px;
+}
+#zapatillaHombre{
+    background-image: url("/imgs/pexels-andrea-piacquadio-3760259.jpg");
+    background-repeat: no-repeat;
+    background-size: 150%;
+    float: left;
+    margin-left: 20px;
+    margin-top: 30px;
+    height: 450px;
+    width: 300px;
+}
+/*le aplicamos diseño a todos los elementos h2 del documento*/
+h2{
+    padding: 10px;
+    font-size: 1.2em;
+}
+/*el footer es la parte de abajo de nuestra página web, creandolo con footer sin
+que sea un div el propio documento lo reconoce como pie de página y lo coloca abajo del todo
+*/
+footer{
+    
+    font-size: 0.7em;
+    color: black;
+    text-align: center;
+    border-top: 1px solid black;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+/*esto es un selector, le decimos que dentro del header coja el elemento h1
+este código aplicará diseño al h1 del header, pero no al header*/
+header h1{
+    position: relative;
+}
+/*lo mismo que arriba pero al elemento img que tenga el h1 que a su vez
+esté metido en el header*/
+header h1 img{
+    height: 100px;
+    width: 100px;
+    
+}
+.article_header{
+    position: relative;
+}
+/*con el . hacemos referencia al class que contiene la chincheta*/
+.chincheta{
+    position: absolute;
+    width: 35px;
+    height: 49px;
+    top: -91px;
+    background-image: url("../imgs/chincheta.png");
+}
+/*otros ejemplos de selectores, en este caso le estamos diciendo que dentro del div
+article_header coja la primera chincheta que tenga con el first-child*/
+.article_header:first-child .chincheta{
+    left: 199px;
+}
+/*Para coger la segunda chincheta no podemos poner second-chil(no existe)
+en este caso le decimos que dentro del elemento article con el nth-child le
+especificamos concretamente que elemento queremos que coja,
+primero entramos al article, le decimos que coja el segundo elemento que
+a su vez esté dentro del article_header que se llame chincheta*/
+article:nth-child(2) .article_header .chincheta{
+    left: 120px;
+}
+/*lo mismo que arriba pero con el tercer elemento que se llame chincheta*/
+article:nth-child(3) .article_header .chincheta{
+    left: 30px;
+}
+article:first-child{
+    transform: rotate(-2deg);
+}
+article:nth-child(3){
+    transform: rotate(2deg);
+}
+
+/* Estilos para el menú desplegable */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: #eeee;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1; /* Para superponer el contenido principal */
+}
+
+/* Estilo para los elementos del menú desplegable */
+.dropdown-content li {
+    display: block;
+    margin: 0; 
+    /* Elimina cualquier margen interno */
+    padding: 5px 15px;
+}
+
+/* Estilos para los enlaces dentro del menú desplegable */
+.dropdown-content li a {
+    line-height: 120%;
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+/* Agregar margen inferior para separar los elementos del menú */
+.dropdown-content li:not(:last-child) {
+    margin-bottom: 5px; /* Ajusta el valor según tus preferencias */
+}
+
+/* Mostrar el menú desplegable al pasar el ratón sobre "Vídeos" */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Estilos para el menú desplegable */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: #eeee;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1; /* Para superponer el contenido principal */
+}
+
+/* Estilo para los elementos del menú desplegable */
+.dropdown-content li {
+    display: block;
+    margin: 0; /* Elimina cualquier margen interno */
+}
+
+/* Estilos para los enlaces dentro del menú desplegable */
+.dropdown-content li a {
+    line-height: 120%;
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+#menuDesplegable li:first-child {
+    border-top-left-radius: 5px; /* Aplica borde redondeado arriba a la izquierda */
+    border-top-right-radius: 5px; /* Aplica borde redondeado arriba a la derecha */
+}
+
+/* Estilo para el último elemento del menú desplegable */
+#menuDesplegable li:last-child {
+    border-bottom-left-radius: 5px; /* Aplica borde redondeado abajo a la izquierda */
+    border-bottom-right-radius: 5px; /* Aplica borde redondeado abajo a la derecha */
+}
+/* Agregar margen inferior para separar los elementos del menú */
+.dropdown-content li:not(:last-child) {
+    margin-bottom: 0px; /* Ajusta el valor según tus preferencias */
+}
+
+/* Mostrar el menú desplegable al pasar el ratón sobre "Vídeos" */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content li:nth-child(odd) {
+    background-color: #fdfdfd; /* Color de fondo para elementos impares */
+}
+
+/* Estilos para los elementos pares del menú desplegable */
+.dropdown-content li:nth-child(even) {
+    background-color: #d6d6d6; /* Color de fondo para elementos pares */
+}
+.dropdown-content li:hover {
+    background-color: #131212; /* Color de fondo en hover */
+}
+#menuDesplegable li a {
+    line-height: 120%;
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+    color: black; /* Cambia el color de fuente a tu preferencia */
+    font-family: Arial, sans-serif; /* Cambia la fuente a tu preferencia */
+    font-size: 14px; /* Cambia el tamaño de fuente a tu preferencia */
+}
+
+
+   
