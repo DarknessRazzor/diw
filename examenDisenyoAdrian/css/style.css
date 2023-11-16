@@ -217,20 +217,22 @@ chinchetas*/
     width: 300px;
     
 }
+#zapatillaHombre > img{
+    width: 300px;
+    height: 300px;
+}
+#zapatillaMujer > img{
+    width: 300px;
+    height: 300px;
+}
 #zapatillaMujer{
-    background-image: url("/imgs/pexels-andrea-piacquadio-3764537.jpg");
-    background-repeat: no-repeat;
-    background-size: 120%;
     float: left;
     margin-top: 30px;
+    margin-left: 660px;
     height: 450px;
     width: 300px;
-    margin-left: 660px;
 }
 #zapatillaHombre{
-    background-image: url("/imgs/pexels-andrea-piacquadio-3760259.jpg");
-    background-repeat: no-repeat;
-    background-size: 150%;
     float: left;
     margin-left: 20px;
     margin-top: 30px;
@@ -254,7 +256,6 @@ aside p{
 que sea un div el propio documento lo reconoce como pie de página y lo coloca abajo del todo
 */
 footer{
-    
     font-size: 0.7em;
     color: black;
     text-align: center;
