@@ -247,6 +247,9 @@ aside{
     left: 1350px;
     bottom: 600px;
 }
+aside p{
+    margin: 10px;
+}
 /*el footer es la parte de abajo de nuestra página web, creandolo con footer sin
 que sea un div el propio documento lo reconoce como pie de página y lo coloca abajo del todo
 */
