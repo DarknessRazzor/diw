@@ -242,6 +242,11 @@ h2{
     padding: 10px;
     font-size: 1.2em;
 }
+aside{
+    position: relative;
+    left: 1350px;
+    bottom: 600px;
+}
 /*el footer es la parte de abajo de nuestra página web, creandolo con footer sin
 que sea un div el propio documento lo reconoce como pie de página y lo coloca abajo del todo
 */
