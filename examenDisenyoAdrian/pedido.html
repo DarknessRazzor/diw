@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curso</title>
+    <link rel="stylesheet" href="css/pedido.css" />
+    <script src="animacion.js"></script>
+  </head>
+  <body>
+    <div id="page">
+      <header>
+        <h1><img src="imgs/espornets.png" /> ESPORTNETS</h1>
+      </header>
+      <nav id="navegador">
+        <ul>
+            <li id="li1"><a href="index.html">Inicio</a></li>
+          <li id="li2" class="dropdown">
+            Productos
+            <ul id="menuDesplegable" class="dropdown-content">
+              <li><a href="zapatillaHombre.html">Zapatillas hombre</a></li>
+              <li><a href="zapatillaMujer.html">Zapatillas mujer</a></li>
+            </ul>
+          </li>
+          <a href="pedido.html"><li id="li3">Pedido</li></a>
+        </ul>
+      </nav>
+    
+        <div id="contenedorFormulario">
+            <h2>Pedido</h2>
+            <form>
+              <input type="text" name="nombre" placeholder="Escriba su nombre" list="nombres"required>
+              <label></label>
+              <input type="text" name="apellido" placeholder="Escriba su apellido" required>
+              <label></label>
+              <input type="text" name="dni" placeholder="Escriba su DNI" required size="10"  maxlength="9" name="nif" pattern="(([X-Z]{1})([-]?)(\d{7})([-]?)([A-Z]{1}))|((\d{8})([-]?)([A-Z]{1}))">
+              <label></label>
+              <input type="email" name="correo" placeholder="Escriba su email" list="correo"required>
+              <label></label>
+              <input type="tel" multiple name="tel" placeholder="Escriba su/sus teléfono/s" required>
+              <label></label>
+              <input type="date" name="fecha" placeholder="Escriba su fecha de nacimiento" required>
+              <label></label>
+              <input type="text" name="productos" placeholder="Escriba los productos que desee" list="productos"required>
+              <label></label>
+              <input type="text" name="envoltorio" placeholder="Color del envoltorio de la caja, ej: azul" required>
+              <label></label>
+              <input type="number" name="cantidad" placeholder="Indica la cantidad de productos deseados"required>
+              <label></label>
+            
+              <textarea name="mensaje" rows="10" cols="50" placeholder="Datos de interés a tener en cuenta para la entrega de su pedido..."></textarea><br><br>
+              <input type="submit" value="Enviar">
+
+              <datalist id="productos">
+                <option label="Zapatilla hombre runner" value="ZH-120-RUN"></option>
+                <option label="Zapatilla hombre pronador" value="ZH-150-PRO"></option>
+                <option label="Zapatilla nombre supinador" value="ZH-120-SUP"></option>
+                <option label="Zapatilla hombre profesional" value="ZH-120-PRO"></option>
+                <option label="Zapatilla mujer runner" value="ZM-120-RUN"></option>
+                <option label="Zapatilla mujer pronador" value="ZM-150-PRO"></option>
+                <option label="Zapatilla mujer supinador" value="ZM-120-SUP"></option>
+                <option label="Zapatilla mujer profesional" value="ZM-120-PRO"></option>
+              </datalist>
+
+              <datalist id="nombres">
+                <option value="Adrián"></option>
+                <option value="Óscar"></option>
+                <option value="Lucas"></option>
+                <option value="Alejandro"></option>
+              </datalist>
+              
+              <datalist id="correo">
+                <option value="adrian@gmail.com"></option>
+              </datalist>
+
+            </form>
+          </div>
+      
+      <aside>
+        <div>
+          <div>
+            <h3>Páginas de interés</h3>
+            <p><a href="">enlace 1</a></p>
+            <p><a href="">enlace 2</a></p>
+            <p><a href="">enlace 3</a></p>
+          </div>
+          <div>
+            <h3>Acerca de la empresa</h3>
+            <p><a href="">enlace 1</a></p>
+          </div>
+        </div>
+      </aside>
+    </div>
+    <footer>
+      <p>
+        EsporNets<br />EsporNets es una marca registrada, no podrá usarse con
+        fines lucrativos
+      </p>
+    </footer>
+  </body>
+</html>

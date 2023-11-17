@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Aguafina+Script&display=swap");
 @keyframes cabecera{
     0%{
         rotate: 0deg;
@@ -77,8 +78,8 @@ body{
     padding: 100px;
     margin-top: 20px;
     text-align: center;
-    background-image: url("/imgs/pexels-leandro-boogalu-1390403.jpg");
-    background-position: 50%;
+    background-image: url("../imgs/pexels-leandro-boogalu-1390403.jpg");
+    /* background-position: 75%; */
     background-repeat: no-repeat;
     
 }
@@ -168,6 +169,18 @@ td{
     font-weight: bold;
     text-shadow: 0px 0px 5px white;
 }
+#li1 a{
+    text-decoration: none;
+    color: white;
+}
+#li2 a{
+    text-decoration: none;
+    color: white;
+}
+#li3 a{
+    text-decoration: none;
+    color: white;
+}
 /*si añadimos :hover es cuando el raton PASE POR ENCIMA DE LO QUE LE 
 HAYAMOS PUESTO EN PRIMERA INSTANCIA, en este caso cuando pase por encima
 de nuestro li1 li2 y li3*/
@@ -175,16 +188,29 @@ de nuestro li1 li2 y li3*/
     text-shadow: 2px 2px 0px rgb(0, 132, 255);
     transition: 0.5s;
 }
-#li2:hover{
-    text-shadow: 2px 2px 0px rgb(111, 0, 255)(51, 3, 51);
-    transition: 0.5s;
-}
+
 #li3:hover{
-    text-shadow: 2px 2px 0px rgb(111, 0, 255)(51, 3, 51);
+    text-shadow: 2px 2px 0px rgb(0, 132, 255);
     transition: 0.5s;
 }
 
-
+#contenedorProductos{
+    margin-top: 40px;
+    display: flex;
+}
+#producto{
+    margin-left: 40px;
+    text-align: center;
+}
+aside{
+    position: relative;
+    left: 1300px;
+    bottom: 500px;
+    width: 100px;
+}
+aside p{
+    margin: 10px;
+}
 /*Este div es la parte central de la página web, donde tenemos los móviles
 la descripción de cada tipo de lenguaje*/
 #content{
@@ -217,7 +243,7 @@ chinchetas*/
     
 }
 #zapatillaMujer{
-    background-image: url("/imgs/pexels-andrea-piacquadio-3764537.jpg");
+    background-image: url("../imgs/pexels-andrea-piacquadio-3764537.jpg");
     background-repeat: no-repeat;
     background-size: 120%;
     float: left;
@@ -227,7 +253,7 @@ chinchetas*/
     margin-left: 660px;
 }
 #zapatillaHombre{
-    background-image: url("/imgs/pexels-andrea-piacquadio-3760259.jpg");
+    background-image: url("../imgs/pexels-andrea-piacquadio-3760259.jpg");
     background-repeat: no-repeat;
     background-size: 150%;
     float: left;
@@ -274,7 +300,7 @@ header h1 img{
     width: 35px;
     height: 49px;
     top: -91px;
-    background-image: url("../imgs/chincheta.png");
+    background-image: url("./imgs/chincheta.png");
 }
 /*otros ejemplos de selectores, en este caso le estamos diciendo que dentro del div
 article_header coja la primera chincheta que tenga con el first-child*/

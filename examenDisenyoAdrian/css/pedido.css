@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Aguafina+Script&display=swap");
 @keyframes cabecera{
     0%{
         rotate: 0deg;
@@ -79,7 +78,7 @@ body{
     padding-bottom: 5%;
     margin-top: 20px;
     text-align: center;
-    background-image: url("../imgs/pexels-andrea-piacquadio-3760259.jpg");
+    background-image: url("../imgs/pexels-leandro-boogalu-1390403.jpg");
     /* background-position: 75%; */
     background-repeat: no-repeat;
     
@@ -136,21 +135,19 @@ li{
 td{
     font-size: 20px;
     background-color: white;
-    
     border: 1px solid black;
 }
 /*Con el #cogemos el id y con el . cogemos las class*/
 #li1{
     /*Este li1 corresponde al botón de contenidos al que le pasamos
     una imagen de fondo, Contenidos*/
-    background-image: url(".imgs/book.png");
+    background-image: url("./imgs/book.png");
     background-repeat: no-repeat;
     background-position-x: center;
     margin-top: 10px;
     color: white;
     font-weight: bold;
     text-shadow: 0px 0px 5px white;
-    
 }
 #li2{
     /*Lo mismo que el anterior pero para el li2, en este caso Vídeos*/
@@ -162,16 +159,25 @@ td{
     font-weight: bold;
     text-shadow: 0px 0px 5px white;
 }
+
 #li3{
     /*Lo mismo que el anterior pero para el li3, Contacto*/
-    background-image: url("./imgs/mail.png");
-    background-repeat: no-repeat;
-    background-position-x: center;
+    
     margin-top: 10px;
     color: white;
     font-weight: bold;
     text-shadow: 0px 0px 5px white;
 }
+#li1:hover{
+    text-shadow: 2px 2px 0px rgb(0, 132, 255);
+    transition: 0.5s;
+}
+
+#li3:hover{
+    text-shadow: 2px 2px 0px rgb(0, 132, 255);
+    transition: 0.5s;
+}
+
 #li1 a{
     text-decoration: none;
     color: white;
@@ -187,15 +193,6 @@ td{
 /*si añadimos :hover es cuando el raton PASE POR ENCIMA DE LO QUE LE 
 HAYAMOS PUESTO EN PRIMERA INSTANCIA, en este caso cuando pase por encima
 de nuestro li1 li2 y li3*/
-#li1:hover{
-    text-shadow: 2px 2px 0px rgb(0, 132, 255);
-    transition: 0.5s;
-}
-
-#li3:hover{
-    text-shadow: 2px 2px 0px rgb(0, 132, 255);
-    transition: 0.5s;
-}
 
 
 /*Este div es la parte central de la página web, donde tenemos los móviles
@@ -207,10 +204,6 @@ la descripción de cada tipo de lenguaje*/
     width: 100%;
     height: 100px;
     display: table;
-    
-}
-#content a{
-    text-decoration: none;
 }
 /*son nuestros articulos, donde tenemos las descripciones, los móviles y las 
 chinchetas*/
@@ -243,7 +236,7 @@ chinchetas*/
 }
 #zapatillaMujer{
     border-style:solid;
-    border-image-source: url("./imgs/movil.png") ;
+    border-image-source: url("../imgs/movil.png") ;
     border-image-slice: 70 20 60 20;
     border-image-repeat: stretch;
     border-width: 70px 10px 60px 10px;
@@ -252,11 +245,10 @@ chinchetas*/
     margin-left: 500px;
     height: 400px;
     width: 300px;
-    color: black;
 }
 #zapatillaHombre{
     border-style:solid;
-    border-image-source: url("./imgs/movil.png") ;
+    border-image-source: url("../imgs/movil.png") ;
     border-image-slice: 70 20 60 20;
     border-image-repeat: stretch;
     border-width: 70px 10px 60px 10px;
@@ -265,7 +257,6 @@ chinchetas*/
     margin-left: 70px;
     height: 400px;
     width: 300px;
-    color: black;
 }
 /*le aplicamos diseño a todos los elementos h2 del documento*/
 h2{
@@ -274,8 +265,8 @@ h2{
 }
 aside{
     position: relative;
-    left: 1300px;
-    bottom: 500px;
+    left: 1200px;
+    bottom: 700px;
     width: 100px;
 }
 aside p{
@@ -302,6 +293,7 @@ esté metido en el header*/
 header h1 img{
     height: 100px;
     width: 100px;
+    border-radius: 50%;
     
 }
 .article_header{
@@ -313,7 +305,7 @@ header h1 img{
     width: 35px;
     height: 49px;
     top: -91px;
-    background-image: url("./imgs/chincheta.png");
+    background-image: url("../imgs/chincheta.png");
 }
 /*otros ejemplos de selectores, en este caso le estamos diciendo que dentro del div
 article_header coja la primera chincheta que tenga con el first-child*/
@@ -441,6 +433,184 @@ article:nth-child(3){
     font-family: Arial, sans-serif; /* Cambia la fuente a tu preferencia */
     font-size: 14px; /* Cambia el tamaño de fuente a tu preferencia */
 }
+/*esto es el css del formulario*/
+textarea{
+    display: inline-block;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3), inset 0px 0px 40px rgba(0, 0, 0, 0.1);
+    color: black;
+    font-weight: bold;
+    padding: 1px 4px 1px 45px;
+    margin: 10px;
+    transition: 0.4s all ease-in;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    width: 90%;
+    height: 150px;
+    background: url("../imgs/icon-mensaje.png") no-repeat 10px;
+  
+    
+}
+textarea:focus{
+    box-shadow: 0px 0px 12px rgb(255,255,255);
+}
+input[type=submit]{
+    margin: 10px 0px 10px 0px;
+    padding: 10px;
+    border: 1px solid #434343;
+    color: white;
+    background: linear-gradient(#5e5e5e, #2a2a2a);
+    box-shadow: inset 0px 1px 1px rga(#353535);
+    cursor: pointer;
+}
+input[type=submit]:focus{
+    background: linear-gradient(#2a2a2a, #5e5e5e);
+}
+input[type=tel]{
+    display: inline-block;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3), inset 0px 0px 40px rgba(0, 0, 0, 0.1);
+    color: black;
+    font-weight: bold;
+    padding: 1px 4px 1px 45px;
+    margin: 10px;
+    height: 32px;
+    width: 330px;
+    background: url("../imgs/icon-nombre.png") no-repeat 10px;
+    transition: 0.4s all ease-in;
+}
+input[type=date]{
+    display: inline-block;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3), inset 0px 0px 40px rgba(0, 0, 0, 0.1);
+    color: black;
+    font-weight: bold;
+    padding: 1px 4px 1px 45px;
+    margin: 10px;
+    height: 32px;
+    width: 330px;
+    background: url("../imgs/icon-nombre.png") no-repeat 10px;
+    transition: 0.4s all ease-in;
+}
+input[type=text]{
+    display: inline-block;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3), inset 0px 0px 40px rgba(0, 0, 0, 0.1);
+    color: black;
+    font-weight: bold;
+    padding: 1px 4px 1px 45px;
+    margin: 10px;
+    height: 32px;
+    width: 330px;
+    background: url("../imgs/icon-nombre.png") no-repeat 10px;
+    transition: 0.4s all ease-in;
+}
+input[type=email]{
+    display: inline-block;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3), inset 0px 0px 40px rgba(0, 0, 0, 0.1);
+    color: black;
+    font-weight: bold;
+    padding: 1px 4px 1px 45px;
+    margin: 10px;
+    height: 32px;
+    width: 330px;
+    background: url("../imgs/icon-correo.png") no-repeat 10px;
+    transition: 0.4s all ease-in;
+}
+input[type=number]{
+    display: inline-block;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3), inset 0px 0px 40px rgba(0, 0, 0, 0.1);
+    color: black;
+    font-weight: bold;
+    padding: 1px 4px 1px 45px;
+    margin: 10px;
+    height: 32px;
+    width: 330px;
+    background: url("../imgs/icon-correo.png") no-repeat 10px;
+    transition: 0.4s all ease-in;
+}
+/* input[type=number]:focus:valid{
+    width: 370px;
+    box-shadow: 0px 0px 12px rgba(255, 255, 255);
+    background: url("/imgs/valid.png") right;
+    background-repeat: no-repeat;
+    
+}
+input[type=number]:focus:invalid{
+    width: 370px;
+    box-shadow: 0px 0px 12px rgba(255, 255, 255);
+    background: url("/imgs/invalid.png") right;
+    background-repeat: no-repeat;
+    
+} */
+input[type=date]:focus:valid{
+    width: 370px;
+    box-shadow: 0px 0px 12px rgba(255, 255, 255);
+    background: url("../imgs/valid.png") right;
+    background-repeat: no-repeat;
+    
+}
+input[type=date]:focus:invalid{
+    width: 370px;
+    box-shadow: 0px 0px 12px rgba(255, 255, 255);
+    background: url("../imgs/invalid.png") right;
+    background-repeat: no-repeat;
+    
+}
+input[type=tel]:focus:valid{
+    width: 370px;
+    box-shadow: 0px 0px 12px rgba(255, 255, 255);
+    background: url("../imgs/valid.png") right;
+    background-repeat: no-repeat;
+    
+}
+input[type=tel]:focus:invalid{
+    width: 370px;
+    box-shadow: 0px 0px 12px rgba(255, 255, 255);
+    background: url("../imgs/invalid.png") right;
+    background-repeat: no-repeat;
+    
+}
+input[type=text]:focus:valid{
+    width: 370px;
+    box-shadow: 0px 0px 12px rgba(255, 255, 255);
+    background: url("../imgs/valid.png") right;
+    background-repeat: no-repeat;
+    
+}
+input[type=text]:focus:invalid{
+    width: 370px;
+    box-shadow: 0px 0px 12px rgba(255, 255, 255);
+    background: url("../imgs/invalid.png") right;
+    background-repeat: no-repeat;
 
+}
+input[type=email]:focus:valid{
+    width: 370px;
+    box-shadow: 0px 0px 12px rgba(255, 255, 255);
+    background: url("../imgs/valid.png") right;
+    background-repeat: no-repeat;
+}
+input[type=email]:focus:invalid{
+    width: 370px;
+    box-shadow: 0px 0px 12px rgba(255, 255, 255);
+    background: url("../imgs/invalid.png") right;
+    background-repeat: no-repeat;
+}
+input + label::after{
+    content: "*";
+}
+#contenedorFormulario{
+    position: relative;
+    display: inline-block;
+    margin: 50px;
+    width: 600px;
+    padding: 20px 50px 20px 50px;
+    justify-content: left;
+    align-content: left;
+    box-shadow: 3px 0px 8px rgba(0, 0, 0, 0.4);
+}
 
    
