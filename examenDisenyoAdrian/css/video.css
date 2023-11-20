@@ -10,10 +10,10 @@
 /*Cambiar el fondo, el body por completo*/
 body {
   padding: 100px;
+  padding-bottom: 5%;
   margin-top: 20px;
   text-align: center;
   background-image: url("../imgs/pexels-leandro-boogalu-1390403.jpg");
-  /* background-position: 75%; */
   background-repeat: no-repeat;
 }
 /*PADDING: MARGEN INTERIOR MARGIN: MARGEN EXTERIOR*/
@@ -22,7 +22,7 @@ body {
   /*Con esto controlamos el ancho del div*/
   width: 80em;
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: auto;
   margin-left: auto;
   margin-right: auto;
   text-align: left;
@@ -66,8 +66,9 @@ li {
 }
 td {
   font-size: 20px;
-  background-color: rgba(255, 255, 255, 0.082);
-  border: 2px solid black;
+  background-color: white;
+
+  border: 1px solid black;
 }
 /*Con el #cogemos el id y con el . cogemos las class*/
 #li1 {
@@ -91,16 +92,6 @@ td {
   font-weight: bold;
   text-shadow: 0px 0px 5px white;
 }
-#li3 {
-  /*Lo mismo que el anterior pero para el li3, Contacto*/
-  background-image: url("../imgs/mail.png");
-  background-repeat: no-repeat;
-  background-position-x: center;
-  margin-top: 10px;
-  color: white;
-  font-weight: bold;
-  text-shadow: 0px 0px 5px white;
-}
 #li4 a {
   text-decoration: none;
   color: white;
@@ -111,56 +102,36 @@ td {
   font-weight: bold;
   text-shadow: 0px 0px 5px white;
 }
-#li1 a {
-  text-decoration: none;
+#li3 {
+  /*Lo mismo que el anterior pero para el li3, Contacto*/
+
+  margin-top: 10px;
   color: white;
-}
-#li2 a {
-  text-decoration: none;
-  color: white;
+  font-weight: bold;
+  text-shadow: 0px 0px 5px white;
 }
 #li3 a {
   text-decoration: none;
   color: white;
 }
-/*si añadimos :hover es cuando el raton PASE POR ENCIMA DE LO QUE LE 
-HAYAMOS PUESTO EN PRIMERA INSTANCIA, en este caso cuando pase por encima
-de nuestro li1 li2 y li3*/
-#li1:hover {
-  text-shadow: 2px 2px 0px rgb(0, 132, 255);
-  transition: 0.5s;
+#li1 a {
+  text-decoration: none;
+  color: white;
 }
-
-#li3:hover {
-  text-shadow: 2px 2px 0px rgb(0, 132, 255);
-  transition: 0.5s;
-}
-
-#contenedorProductos {
-  margin-top: 40px;
+#contenedorVideo {
   display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
 }
-#producto {
-  margin-left: 40px;
-  text-align: center;
-}
-aside {
-  position: relative;
-  left: 1300px;
-  bottom: 500px;
-  width: 100px;
-}
-aside p {
-  margin: 10px;
-}
+
 /*Este div es la parte central de la página web, donde tenemos los móviles
 la descripción de cada tipo de lenguaje*/
 #content {
-  margin-bottom: 70px;
+  margin-bottom: -100px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 0.8em;
-  width: 50%;
-  height: 200px;
+  width: 100%;
+  height: 100px;
   display: table;
 }
 /*son nuestros articulos, donde tenemos las descripciones, los móviles y las 
@@ -183,24 +154,36 @@ chinchetas*/
   height: 350px;
   width: 300px;
 }
+#zapatillaHombre > img {
+  width: 300px;
+  height: 300px;
+}
+#zapatillaMujer > img {
+  width: 300px;
+  height: 300px;
+}
 #zapatillaMujer {
-  background-image: url("../imgs/pexels-andrea-piacquadio-3764537.jpg");
-  background-repeat: no-repeat;
-  background-size: 120%;
+  border-style: solid;
+  border-image-source: url("../imgs/movil.png");
+  border-image-slice: 70 20 60 20;
+  border-image-repeat: stretch;
+  border-width: 70px 10px 60px 10px;
   float: left;
   margin-top: 30px;
-  height: 450px;
+  margin-left: 500px;
+  height: 400px;
   width: 300px;
-  margin-left: 660px;
 }
 #zapatillaHombre {
-  background-image: url("../imgs/pexels-andrea-piacquadio-3760259.jpg");
-  background-repeat: no-repeat;
-  background-size: 150%;
+  border-style: solid;
+  border-image-source: url("../imgs/movil.png");
+  border-image-slice: 70 20 60 20;
+  border-image-repeat: stretch;
+  border-width: 70px 10px 60px 10px;
   float: left;
-  margin-left: 20px;
   margin-top: 30px;
-  height: 450px;
+  margin-left: 70px;
+  height: 400px;
   width: 300px;
 }
 /*le aplicamos diseño a todos los elementos h2 del documento*/
@@ -210,14 +193,19 @@ h1 {
 h2 {
   padding: 10px;
   font-size: 1.2em;
-  font-family: "Roboto Slab", serif;
+}
+aside {
+  position: relative;
+  left: 1300px;
+  bottom: 350px;
+  width: 100px;
+}
+aside p {
+  margin: 10px;
 }
 /*el footer es la parte de abajo de nuestra página web, creandolo con footer sin
 que sea un div el propio documento lo reconoce como pie de página y lo coloca abajo del todo
 */
-.default {
-  font-family: "Roboto Slab", serif;
-}
 footer {
   font-size: 0.7em;
   color: black;
@@ -383,22 +371,6 @@ header h1 img {
   100% {
     transform: translateY(0px);
     animation-timing-function: ease-out;
-    opacity: 1;
-  }
-}
-.slide-in-top {
-  -webkit-animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-@keyframes slide-in-top {
-  0% {
-    -webkit-transform: translateY(-1000px);
-    transform: translateY(-1000px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
     opacity: 1;
   }
 }

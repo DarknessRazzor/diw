@@ -1,446 +1,467 @@
 @import url("https://fonts.googleapis.com/css2?family=Aguafina+Script&display=swap");
-@keyframes cabecera{
-    0%{
-        rotate: 0deg;
-    }
-    50%{
-        rotate: 180deg;
-    }
-    0%{
-        rotate: 0deg;
-    }
-}
-/* header>h1>img{
-    animation: cabecera 5s infinite;
-} */
-@keyframes mueveChincheta1{
-    0%{
-        left: 0px;
-    }
-    100%{
-        left: 199px;
-    }
-}
-.moverChincheta1{
-    animation: mueveChincheta1 1s ease-in;
-}
-@keyframes animArticle1{
-    0%{
-        rotate: 0deg;
-    }
-    100%{
-        rotate: -2deg;
-    }
-} 
- .article1{
-    animation: animArticle1 0.5s 1s forwards;
-} 
-@keyframes mueveChincheta2{
-    0%{
-        left: 0px;
-    }
-    100%{
-        left: 120px;;
-    }
-}
-.moverChincheta2{
-    animation: mueveChincheta2 1s 1.5s forwards;
-}
-@keyframes mueveChincheta3{
-    0%{
-        left: 0px;
-    }
-    100%{
-        left: 30px;
-    }
-}
-.moverChincheta3{
-    animation: mueveChincheta3 1s 2s forwards;
-}
-@keyframes animArticle3{
-    0%{
-        rotate: 0deg;
-    }
-    100%{
-        rotate: 2deg;
-    }
-}
-.article3{
-    animation: animArticle3 0.5s 3s forwards;
-}
-
-*{
-    margin: 0px;
-    padding: 0px;
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Knewave&family=Michroma&family=Roboto+Slab:wght@100;400&family=Vina+Sans&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
 }
 /*Cambiar el fondo, el body por completo*/
-body{
-    padding: 100px;
-    padding-bottom: 5%;
-    margin-top: 20px;
-    text-align: center;
-    background-image: url("../imgs/pexels-andrea-piacquadio-3760259.jpg");
-    /* background-position: 75%; */
-    background-repeat: no-repeat;
-    
+body {
+  padding: 100px;
+  padding-bottom: 5%;
+  margin-top: 20px;
+  text-align: center;
+  background-image: url("../imgs/pexels-andrea-piacquadio-3760259.jpg");
+  background-repeat: no-repeat;
 }
 /*PADDING: MARGEN INTERIOR MARGIN: MARGEN EXTERIOR*/
 /*El div general que va a englobar todo*/
-#page{
-    /*Con esto controlamos el ancho del div*/
-    width: 80em;
-    margin-top: 0px;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
+#page {
+  /*Con esto controlamos el ancho del div*/
+  width: 80em;
+  margin-top: 0px;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
 }
 /*La cabecera de nuestra página web*/
-header{
-    text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 1.1em;
-    color: white;
-    border-bottom: 1px solid black;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
-    height: 100px;
-    
+header {
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1.1em;
+  color: white;
+  border-bottom: 1px solid black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  height: 100px;
 }
 /*Este nav engloba los hiperenlaces para navegar por la página web*/
-nav{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1.4em;
-    color: silver;
-    text-align: center;
-    height: 100px;
-    background-color: rgba(143, 114, 119, 0);
-    
+nav {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.4em;
+  color: silver;
+  text-align: center;
+  height: 100px;
+  background-color: rgba(143, 114, 119, 0);
 }
 /*Creamos una lista para hacer el menú desplegable*/
-li{
-    padding-top: 30px;
-    margin-top: 0px;
-    margin-right: 100px;
-    margin-left: 100px;
-    margin-bottom: 20px;
-    /*Con esto le quitamos el estilo al li*/
-    list-style: none;
-    /*Mostrar en modo columna los datos del li*/
-    display: inline-block;
-    text-align: center;
-    cursor: default;
+li {
+  padding-top: 30px;
+  margin-top: 0px;
+  margin-right: 100px;
+  margin-left: 100px;
+  margin-bottom: 20px;
+  /*Con esto le quitamos el estilo al li*/
+  list-style: none;
+  /*Mostrar en modo columna los datos del li*/
+  display: inline-block;
+  text-align: center;
+  cursor: default;
 }
-td{
-    font-size: 20px;
-    background-color: white;
-    
-    border: 1px solid black;
+td {
+  font-size: 20px;
+  background-color: white;
+
+  border: 1px solid black;
 }
 /*Con el #cogemos el id y con el . cogemos las class*/
-#li1{
-    /*Este li1 corresponde al botón de contenidos al que le pasamos
-    una imagen de fondo, Contenidos*/
-    background-image: url(".imgs/book.png");
-    background-repeat: no-repeat;
-    background-position-x: center;
-    margin-top: 10px;
-    color: white;
-    font-weight: bold;
-    text-shadow: 0px 0px 5px white;
-    
+#li1 {
+  margin-top: 10px;
+  color: white;
+  font-weight: bold;
+  text-shadow: 0px 0px 5px white;
 }
-#li2{
-    /*Lo mismo que el anterior pero para el li2, en este caso Vídeos*/
-    background-image: url("./imgs/film.png");
-    background-repeat: no-repeat;
-    background-position-x: center;
-    margin-top: 10px;
-    color: white;
-    font-weight: bold;
-    text-shadow: 0px 0px 5px white;
+#li2 {
+  margin-top: 10px;
+  color: white;
+  font-weight: bold;
+  text-shadow: 0px 0px 5px white;
 }
-#li3{
-    /*Lo mismo que el anterior pero para el li3, Contacto*/
-    background-image: url("./imgs/mail.png");
-    background-repeat: no-repeat;
-    background-position-x: center;
-    margin-top: 10px;
-    color: white;
-    font-weight: bold;
-    text-shadow: 0px 0px 5px white;
+#li3 {
+  margin-top: 10px;
+  color: white;
+  font-weight: bold;
+  text-shadow: 0px 0px 5px white;
 }
-#li1 a{
-    text-decoration: none;
-    color: white;
+#li4 {
+  margin-top: 10px;
+  color: white;
+  font-weight: bold;
+  text-shadow: 0px 0px 5px white;
 }
-#li2 a{
-    text-decoration: none;
-    color: white;
+#li1 a {
+  text-decoration: none;
+  color: white;
 }
-#li3 a{
-    text-decoration: none;
-    color: white;
+#li2 a {
+  text-decoration: none;
+  color: white;
+}
+#li3 a {
+  text-decoration: none;
+  color: white;
+}
+#li4 a {
+  text-decoration: none;
+  color: white;
 }
 /*si añadimos :hover es cuando el raton PASE POR ENCIMA DE LO QUE LE 
 HAYAMOS PUESTO EN PRIMERA INSTANCIA, en este caso cuando pase por encima
 de nuestro li1 li2 y li3*/
-#li1:hover{
-    text-shadow: 2px 2px 0px rgb(0, 132, 255);
-    transition: 0.5s;
+#li1:hover {
+  text-shadow: 2px 2px 0px rgb(0, 132, 255);
+  transition: 0.5s;
 }
 
-#li3:hover{
-    text-shadow: 2px 2px 0px rgb(0, 132, 255);
-    transition: 0.5s;
+#li3:hover {
+  text-shadow: 2px 2px 0px rgb(0, 132, 255);
+  transition: 0.5s;
 }
-
 
 /*Este div es la parte central de la página web, donde tenemos los móviles
 la descripción de cada tipo de lenguaje*/
-#content{
-    margin-bottom: -100px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 0.8em;
-    width: 100%;
-    height: 100px;
-    display: table;
-    
+#content {
+  margin-bottom: -100px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.8em;
+  width: 100%;
+  height: 100px;
+  display: table;
 }
-#content a{
-    text-decoration: none;
+#content a {
+  text-decoration: none;
 }
 /*son nuestros articulos, donde tenemos las descripciones, los móviles y las 
 chinchetas*/
-#article{
-    border-style:solid;
-    width: 250px;
-    height: 200px;
-    border: 1px solid lightgray;
-    text-align: center;
-    line-height: 1.8em;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 5px;
-    margin: 100px;
-    float: left;   
+#article {
+  border-style: solid;
+  width: 250px;
+  height: 200px;
+  border: 1px solid lightgray;
+  text-align: center;
+  line-height: 1.8em;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  margin: 100px;
+  float: left;
 }
 /* formato que le pasamos a la descripción que está puesta debajo de cada imagen*/
-.article_hombre{
-    height: 350px;
-    width: 300px;
-    
+.article_hombre {
+  height: 350px;
+  width: 300px;
 }
-#zapatillaHombre > img{
-    width: 300px;
-    height: 300px;
+#zapatillaHombre > img {
+  width: 300px;
+  height: 300px;
 }
-#zapatillaMujer > img{
-    width: 300px;
-    height: 300px;
+#zapatillaMujer > img {
+  width: 300px;
+  height: 300px;
 }
-#zapatillaMujer{
-    border-style:solid;
-    border-image-source: url("../imgs/movil.png") ;
-    border-image-slice: 70 20 60 20;
-    border-image-repeat: stretch;
-    border-width: 70px 10px 60px 10px;
-    float: left;
-    margin-top: 30px;
-    margin-left: 500px;
-    height: 400px;
-    width: 300px;
-    color: black;
+#zapatillaMujer {
+  border-style: solid;
+  border-image-source: url("../imgs/movil.png");
+  border-image-slice: 70 20 60 20;
+  border-image-repeat: stretch;
+  border-width: 70px 10px 60px 10px;
+  float: left;
+  margin-top: 30px;
+  margin-left: 500px;
+  height: 400px;
+  width: 300px;
+  color: black;
 }
-#zapatillaHombre{
-    border-style:solid;
-    border-image-source: url("../imgs/movil.png") ;
-    border-image-slice: 70 20 60 20;
-    border-image-repeat: stretch;
-    border-width: 70px 10px 60px 10px;
-    float: left;
-    margin-top: 30px;
-    margin-left: 70px;
-    height: 400px;
-    width: 300px;
-    color: black;
+#zapatillaHombre {
+  border-style: solid;
+  border-image-source: url("../imgs/movil.png");
+  border-image-slice: 70 20 60 20;
+  border-image-repeat: stretch;
+  border-width: 70px 10px 60px 10px;
+  float: left;
+  margin-top: 30px;
+  margin-left: 70px;
+  height: 400px;
+  width: 300px;
+  color: black;
 }
 /*le aplicamos diseño a todos los elementos h2 del documento*/
-h2{
-    padding: 10px;
-    font-size: 1.2em;
+h2 {
+  padding: 10px;
+  font-size: 1.2em;
+  font-family: "Roboto Slab", serif;
 }
-aside{
-    position: relative;
-    left: 1300px;
-    bottom: 500px;
-    width: 100px;
+aside {
+  position: relative;
+  left: 1300px;
+  bottom: 500px;
+  width: 100px;
+  font-family: "Knewave";
 }
-aside p{
-    margin: 10px;
+aside p {
+  margin: 10px;
+}
+aside a {
+  text-decoration: none;
+  color: white;
 }
 /*el footer es la parte de abajo de nuestra página web, creandolo con footer sin
 que sea un div el propio documento lo reconoce como pie de página y lo coloca abajo del todo
 */
-footer{
-    font-size: 0.7em;
-    color: black;
-    text-align: center;
-    border-top: 1px solid black;
-    padding-top: 15px;
-    padding-bottom: 15px;
+footer {
+  font-size: 0.7em;
+  color: black;
+  text-align: center;
+  border-top: 1px solid black;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+h1 {
+  font-family: "Aquafina";
 }
 /*esto es un selector, le decimos que dentro del header coja el elemento h1
 este código aplicará diseño al h1 del header, pero no al header*/
-header h1{
-    position: relative;
+header h1 {
+  position: relative;
 }
 /*lo mismo que arriba pero al elemento img que tenga el h1 que a su vez
 esté metido en el header*/
-header h1 img{
-    height: 100px;
-    width: 100px;
-    
+header h1 img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
 }
-.article_header{
-    position: relative;
+.article_header {
+  position: relative;
 }
 /*con el . hacemos referencia al class que contiene la chincheta*/
-.chincheta{
-    position: absolute;
-    width: 35px;
-    height: 49px;
-    top: -91px;
-    background-image: url("./imgs/chincheta.png");
+.chincheta {
+  position: absolute;
+  width: 35px;
+  height: 49px;
+  top: -91px;
+  background-image: url("./imgs/chincheta.png");
 }
 /*otros ejemplos de selectores, en este caso le estamos diciendo que dentro del div
 article_header coja la primera chincheta que tenga con el first-child*/
-.article_header:first-child .chincheta{
-    left: 199px;
+.article_header:first-child .chincheta {
+  left: 199px;
 }
 /*Para coger la segunda chincheta no podemos poner second-chil(no existe)
 en este caso le decimos que dentro del elemento article con el nth-child le
 especificamos concretamente que elemento queremos que coja,
 primero entramos al article, le decimos que coja el segundo elemento que
 a su vez esté dentro del article_header que se llame chincheta*/
-article:nth-child(2) .article_header .chincheta{
-    left: 120px;
+article:nth-child(2) .article_header .chincheta {
+  left: 120px;
 }
 /*lo mismo que arriba pero con el tercer elemento que se llame chincheta*/
-article:nth-child(3) .article_header .chincheta{
-    left: 30px;
+article:nth-child(3) .article_header .chincheta {
+  left: 30px;
 }
-article:first-child{
-    transform: rotate(-2deg);
+article:first-child {
+  transform: rotate(-2deg);
 }
-article:nth-child(3){
-    transform: rotate(2deg);
+article:nth-child(3) {
+  transform: rotate(2deg);
 }
 
 /* Estilos para el menú desplegable */
 .dropdown-content {
-    display: none;
-    position: absolute;
-    background: #eeee;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    z-index: 1; /* Para superponer el contenido principal */
+  display: none;
+  position: absolute;
+  background: #eeee;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 1; /* Para superponer el contenido principal */
 }
 
 /* Estilo para los elementos del menú desplegable */
 .dropdown-content li {
-    display: block;
-    margin: 0; 
-    /* Elimina cualquier margen interno */
-    padding: 5px 15px;
+  display: block;
+  margin: 0;
+  /* Elimina cualquier margen interno */
+  padding: 5px 15px;
 }
 
 /* Estilos para los enlaces dentro del menú desplegable */
 .dropdown-content li a {
-    line-height: 120%;
-    padding: 10px 15px;
-    display: block;
-    text-decoration: none;
-    color: black;
+  line-height: 120%;
+  padding: 10px 15px;
+  display: block;
+  text-decoration: none;
+  color: black;
 }
 
 /* Agregar margen inferior para separar los elementos del menú */
 .dropdown-content li:not(:last-child) {
-    margin-bottom: 5px; /* Ajusta el valor según tus preferencias */
+  margin-bottom: 5px; /* Ajusta el valor según tus preferencias */
 }
 
 /* Mostrar el menú desplegable al pasar el ratón sobre "Vídeos" */
 .dropdown:hover .dropdown-content {
-    display: block;
+  display: block;
 }
 
 /* Estilos para el menú desplegable */
 .dropdown-content {
-    display: none;
-    position: absolute;
-    background: #eeee;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    z-index: 1; /* Para superponer el contenido principal */
+  display: none;
+  position: absolute;
+  background: #eeee;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 1; /* Para superponer el contenido principal */
 }
 
 /* Estilo para los elementos del menú desplegable */
 .dropdown-content li {
-    display: block;
-    margin: 0; /* Elimina cualquier margen interno */
+  display: block;
+  margin: 0; /* Elimina cualquier margen interno */
 }
 
 /* Estilos para los enlaces dentro del menú desplegable */
 .dropdown-content li a {
-    line-height: 120%;
-    padding: 10px 15px;
-    display: block;
-    text-decoration: none;
-    color: #000;
+  line-height: 120%;
+  padding: 10px 15px;
+  display: block;
+  text-decoration: none;
+  color: #000;
 }
 #menuDesplegable li:first-child {
-    border-top-left-radius: 5px; /* Aplica borde redondeado arriba a la izquierda */
-    border-top-right-radius: 5px; /* Aplica borde redondeado arriba a la derecha */
+  border-top-left-radius: 5px; /* Aplica borde redondeado arriba a la izquierda */
+  border-top-right-radius: 5px; /* Aplica borde redondeado arriba a la derecha */
 }
 
 /* Estilo para el último elemento del menú desplegable */
 #menuDesplegable li:last-child {
-    border-bottom-left-radius: 5px; /* Aplica borde redondeado abajo a la izquierda */
-    border-bottom-right-radius: 5px; /* Aplica borde redondeado abajo a la derecha */
+  border-bottom-left-radius: 5px; /* Aplica borde redondeado abajo a la izquierda */
+  border-bottom-right-radius: 5px; /* Aplica borde redondeado abajo a la derecha */
 }
 /* Agregar margen inferior para separar los elementos del menú */
 .dropdown-content li:not(:last-child) {
-    margin-bottom: 0px; /* Ajusta el valor según tus preferencias */
+  margin-bottom: 0px; /* Ajusta el valor según tus preferencias */
 }
 
 /* Mostrar el menú desplegable al pasar el ratón sobre "Vídeos" */
 .dropdown:hover .dropdown-content {
-    display: block;
+  display: block;
 }
 .dropdown-content li:nth-child(odd) {
-    background-color: #fdfdfd; /* Color de fondo para elementos impares */
+  background-color: #fdfdfd; /* Color de fondo para elementos impares */
 }
 
 /* Estilos para los elementos pares del menú desplegable */
 .dropdown-content li:nth-child(even) {
-    background-color: #d6d6d6; /* Color de fondo para elementos pares */
+  background-color: #d6d6d6; /* Color de fondo para elementos pares */
 }
 .dropdown-content li:hover {
-    background-color: #131212; /* Color de fondo en hover */
+  background-color: #131212; /* Color de fondo en hover */
 }
 #menuDesplegable li a {
-    line-height: 120%;
-    padding: 10px 15px;
-    display: block;
-    text-decoration: none;
-    color: black; /* Cambia el color de fuente a tu preferencia */
-    font-family: Arial, sans-serif; /* Cambia la fuente a tu preferencia */
-    font-size: 14px; /* Cambia el tamaño de fuente a tu preferencia */
+  line-height: 120%;
+  padding: 10px 15px;
+  display: block;
+  text-decoration: none;
+  color: black; /* Cambia el color de fuente a tu preferencia */
+  font-family: Arial, sans-serif; /* Cambia la fuente a tu preferencia */
+  font-size: 14px; /* Cambia el tamaño de fuente a tu preferencia */
+}
+.bounce-top {
+  -webkit-animation: bounce-top 0.9s both;
+  animation: bounce-top 0.9s both;
+}
+@keyframes bounce-top {
+  0% {
+    transform: translateY(-45px);
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    transform: translateY(-24px);
+    animation-timing-function: ease-in;
+  }
+  65% {
+    transform: translateY(-12px);
+    animation-timing-function: ease-in;
+  }
+  82% {
+    transform: translateY(-6px);
+    animation-timing-function: ease-in;
+  }
+  93% {
+    transform: translateY(-4px);
+    animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+    transform: translateY(0px);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: translateY(0px);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+.tracking-in-expand {
+  -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1)
+    both;
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
 
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.text-focus-in {
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+.rotate-in-2-cw {
+  -webkit-animation: rotate-in-2-cw 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: rotate-in-2-cw 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@keyframes rotate-in-2-cw {
+  0% {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
 
-   
