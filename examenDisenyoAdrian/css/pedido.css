@@ -492,6 +492,19 @@ input[type=date]{
     background: url("../imgs/icon-nombre.png") no-repeat 10px;
     transition: 0.4s all ease-in;
 }
+input[type=color]{
+    display: inline-block;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3), inset 0px 0px 40px rgba(0, 0, 0, 0.1);
+    color: black;
+    font-weight: bold;
+    padding: 1px 4px 1px 45px;
+    margin: 10px;
+    height: 32px;
+    width: 330px;
+    background: url("../imgs/icon-nombre.png") no-repeat 10px;
+    transition: 0.4s all ease-in;
+}
 input[type=text]{
     display: inline-block;
     border: 1px solid #e5e5e5;
@@ -531,20 +544,20 @@ input[type=number]{
     background: url("../imgs/icon-correo.png") no-repeat 10px;
     transition: 0.4s all ease-in;
 }
-/* input[type=number]:focus:valid{
+input[type=color]:focus:valid{
     width: 370px;
     box-shadow: 0px 0px 12px rgba(255, 255, 255);
-    background: url("/imgs/valid.png") right;
+    background: url("../imgs/valid.png") right;
     background-repeat: no-repeat;
     
 }
-input[type=number]:focus:invalid{
+input[type=color]:focus:invalid{
     width: 370px;
     box-shadow: 0px 0px 12px rgba(255, 255, 255);
-    background: url("/imgs/invalid.png") right;
+    background: url("../imgs/invalid.png") right;
     background-repeat: no-repeat;
     
-} */
+}
 input[type=date]:focus:valid{
     width: 370px;
     box-shadow: 0px 0px 12px rgba(255, 255, 255);
