@@ -243,7 +243,7 @@ chinchetas*/
 }
 #zapatillaMujer{
     border-style:solid;
-    border-image-source: url("./imgs/movil.png") ;
+    border-image-source: url("../imgs/movil.png") ;
     border-image-slice: 70 20 60 20;
     border-image-repeat: stretch;
     border-width: 70px 10px 60px 10px;
@@ -256,7 +256,7 @@ chinchetas*/
 }
 #zapatillaHombre{
     border-style:solid;
-    border-image-source: url("./imgs/movil.png") ;
+    border-image-source: url("../imgs/movil.png") ;
     border-image-slice: 70 20 60 20;
     border-image-repeat: stretch;
     border-width: 70px 10px 60px 10px;
