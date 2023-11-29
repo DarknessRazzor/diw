@@ -23,3 +23,27 @@
   #contenedor .bloque:nth-child(5) {
     background-color: blue;
   }
+  @media all and (max-width: 800px) {
+    #contenedor .bloque {
+      /* Cuando el ancho sea inferior a
+  800px el elemento será un bloque */
+      display: block !important;
+      width: auto !important;
+    }
+    #contenedor .bloque:first-child {
+      background-color: yellow;
+    }
+    #contenedor .bloque:last-child {
+      background-color: white;
+    }
+    #contenedor .bloque:nth-child(3) {
+      background-color: green;
+    }
+    #contenedor .bloque:nth-child(4) {
+      background-color: orange;
+    }
+    #contenedor .bloque:nth-child(5) {
+      background-color: gray;
+    }
+  }
+  
