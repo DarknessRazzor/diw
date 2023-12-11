@@ -1,0 +1,74 @@
+.grid-item {
+  font-size: 30px;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  height: 50vw;
+}
+
+.uno {
+  grid-area: 1 / 1 / 3 / 2;
+  background-image: url("../imgs/pexels-photo-2961121.jpeg");
+}
+.dos {
+  grid-area: 1 / 2 / 2 / 3;
+  background-image: url("../imgs/pexels-photo-2941098.jpeg");
+}
+.tres {
+  grid-area: 2 / 2 / 3 / 3;
+  background-image: url("../imgs/pexels-photo-2948260.jpeg");
+}
+.cuatro {
+  grid-area: 1 / 3 / 3 / 4;
+  background-image: url("../imgs/pexels-photo-2958731.jpeg");
+}
+.cinco {
+  grid-area: 1 / 4 / 2 / 5;
+  background-image: url("../imgs/pexels-photo-2944537.jpeg");
+}
+.seis {
+  grid-area: 2 / 4 / 3 / 5;
+  background-image: url("../imgs/pexels-photo-2976579.jpg");
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  height: 50vw;
+}
+
+.siete {
+    grid-area: 1 / 1 / 2 / 2;
+    background-image: url("../imgs/pexels-photo-2976579.jpg");
+}
+.ocho {
+    grid-area: 1 / 2 / 2 / 3;
+    background-image: url("../imgs/pexels-photo-2962135.jpeg");
+}
+.nueve {
+    grid-area: 1 / 3 / 2 / 4;
+    background-image: url("../imgs/pexels-photo-2905547.jpg");
+}
+.diez {
+    grid-area: 2 / 1 / 3 / 2;
+    background-image: url("../imgs/pexels-photo-2922672.jpeg");
+}
+.once {
+    grid-area: 2 / 2 / 3 / 3;
+    background-image: url("../imgs/pexels-photo-3012724.jpeg");
+}
+.doce {
+    grid-area: 3 / 1 / 4 / 2;
+    background-image: url("../imgs/pexels-photo-2943603.jpeg");
+}
