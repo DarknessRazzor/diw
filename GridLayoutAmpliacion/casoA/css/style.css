@@ -1,0 +1,94 @@
+.parent {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 0.5fr 2fr 1.5fr 2fr 1.5fr 0.5;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.div2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.div3 {
+  grid-area: 1 / 3 / 2 / 4;
+}
+.div4 {
+  grid-area: 1 / 4 / 2 / 5;
+}
+.div5 {
+  grid-area: 1 / 5 / 2 / 6;
+}
+.div6 {
+  grid-area: 1 / 6 / 2 / 7;
+}
+.div7 {
+  grid-area: 2 / 1 / 3 / 7;
+}
+.div8 {
+  grid-area: 3 / 1 / 4 / 7;
+}
+.div9 {
+  grid-area: 4 / 1 / 5 / 3;
+}
+.div10 {
+  grid-area: 4 / 3 / 5 / 7;
+}
+.div11 {
+  grid-area: 5 / 1 / 6 / 7;
+}
+
+.home {
+  background-color: darkgray;
+  text-align: center;
+}
+.banner {
+  background-color: rgb(87, 83, 83);
+  color: rgb(190, 190, 190);
+}
+.lorem {
+  background-color: black;
+  color: #a2a2a2;
+}
+.aside {
+  background-color: #bfbfbf;
+  color: #4a4a4a;
+}
+.main {
+  background-color: #dbdada;
+}
+.ipsum {
+  background-color: grey;
+  color: white;
+}
+.grandullon {
+  grid-area: 6/1/6/7;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 0.5fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  background-color: rgb(46, 46, 46);
+  padding: 0px 10px 10px 10px;
+}
+
+.div12 {
+  grid-area: 2 / 1 / 7 / 2; /* inicio fila/ inicio columna/ final final/ final columna*/
+}
+.div13 {
+  grid-area: 2 / 2 / 7 / 3;
+}
+.div14 {
+  grid-area: 2 / 3 / 7 / 4;
+}
+.div15 {
+  grid-area: 2 / 4 / 7 / 5;
+}
+
+.box {
+  background-color: grey;
+  text-align: center;
+  color: white;
+}
