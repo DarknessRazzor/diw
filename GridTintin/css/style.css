@@ -76,7 +76,9 @@ h1{
   width: 25%;
   
 }
-
+.bordeVerde{
+  border: 5px solid greenyellow;
+}
 nav{
     float: left;
     width: 25%;
