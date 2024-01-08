@@ -1,0 +1,46 @@
+$primerDestacado: #FF8000;
+$tamanyoLetra: 1.6em;
+$centrar: center;
+$espaciado: 6px;
+
+$segundoDestacado: #2E5F64;
+$tamanyoLetra2: 1.4em;
+$decoracion: underline;
+$espaciado2: 5px;
+
+$cursiva: italic;
+
+$espaciadoDivs: 20px;
+
+$alineacion: right;
+
+#primero{
+    .destacado{
+        color: $primerDestacado;
+        font-size: $tamanyoLetra;
+        text-align: $centrar;
+        padding: $espaciado;
+    }
+    :not(.destacado){
+        font-style: $cursiva;
+    }
+}
+#segundo{
+    .destacado{
+        color: $segundoDestacado;
+        font-size: $tamanyoLetra2;
+        text-decoration: $decoracion;
+        padding: $espaciado2;
+    }
+    :not(.destacado){
+        font-style: $cursiva;
+    }
+    #parrafos{
+        p{
+        text-align: $alineacion;
+        }
+    }
+}
+div{
+    padding: $espaciadoDivs;
+}
