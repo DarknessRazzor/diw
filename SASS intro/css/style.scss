@@ -21,9 +21,7 @@ $alineacion: right;
         text-align: $centrar;
         padding: $espaciado;
     }
-    :not(.destacado){
-        font-style: $cursiva;
-    }
+    
 }
 #segundo{
     .destacado{

@@ -4,9 +4,6 @@
   text-align: center;
   padding: 6px;
 }
-#primero :not(.destacado) {
-  font-style: italic;
-}
 
 #segundo .destacado {
   color: #2E5F64;
