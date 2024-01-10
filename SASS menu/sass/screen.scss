@@ -1,0 +1,108 @@
+$colorTexto: #666;
+$colorTextoHover: #fff;
+
+$colorFondo: #eee;
+$colorFondoHover: #888;
+
+@mixin textoYbackground{
+    color: $colorTexto;
+    background-color: $colorFondo;
+}
+@mixin textoYbackgroundHover{
+    color: $colorTextoHover;
+    background-color: $colorFondoHover;
+}
+@mixin tamanyoCaja($x) {
+    -webkit-box-sizing: $x;
+    -moz-box-sizing: $x;
+    box-sizing: $x;
+    }
+@mixin transiciones($property, $duration, $timing: linear){
+    -webkit-box-sizing: $property, $duration, $timing;
+    -moz-box-sizing: $property, $duration, $timing;
+    box-sizing: $property, $duration, $timing;
+}
+@mixin animaciones($name, $duration, $timing: linear){
+    -webkit-box-sizing: $name, $duration, $timing;
+    -moz-box-sizing: $name, $duration, $timing;
+    box-sizing: $name, $duration, $timing;
+
+}
+footer{
+    @include textoYbackground();
+    @include tamanyoCaja(border-box);
+    font-size: 1em;
+    text-align: center
+}
+header{
+    @include textoYbackground();
+    font-size: 2em;
+}
+// nav{
+//     background-color: gray;
+//     ul{
+//         display: flex;
+//         justify-content: space-between;
+//         li {
+//             color: white;
+//             list-style: none;
+//             text-decoration: none;
+//             a{
+//                 color: white;
+//                 text-decoration: none;
+//         }
+//     }
+// }
+// }
+nav {
+    background-color: gray;
+    ul{
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        .categoria{
+            position: relative;
+            display: inline-block;
+            a{ 
+                color: white;
+                text-decoration: none;
+                .submenu{
+                    display: none;
+                    position: absolute;
+                    background-color: #f1f1f1;
+                    min-width: 160px;
+                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                    z-index: 1;
+                    text-decoration: none;
+                    li{
+                        color: white;
+                        list-style: none;
+                        a{
+                            color: white;
+                            padding: 12px 16px;
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// .categoria{
+//     position: relative;
+//     display: inline-block;
+// }
+// .submenu{
+//     display: none;
+//     position: absolute;
+//     background-color: #f1f1f1;
+//     min-width: 160px;
+//     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+//     z-index: 1;
+// }
+// .submenu a{
+//     color: black;
+//     padding: 12px 16px;
+//     text-decoration: none;
+//     display: block;
+// }
