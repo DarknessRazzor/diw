@@ -1,0 +1,81 @@
+$colorTexto: #eee;
+$colorTextoHover: lighten(#eee, 10%);
+
+$colorFondo: #15a;
+$colorFondoHover: lighten(#15a, 10%);
+$colorTitulo: darken(#15a, 10%);
+
+@import "mixin";
+@import "contenido";
+
+footer {
+    color: $colorTexto;
+    background-color: $colorFondo;
+  @include tamanyoCaja(border-box);
+  font-size: 1em;
+  padding: 10px;
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+}
+header {
+  color: black;
+  background-color: #e4dcdc;
+  font-size: 2em;
+
+}
+nav {
+background: $colorFondo;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    .categoria {
+      position: relative;
+      padding: 10px;
+      width: 20%;
+      text-align: center;
+      @include textoYbackground();
+        a {
+            &:hover {
+                @include textoYbackgroundHover();
+            }
+            color: white;
+            text-decoration: none;
+        }
+        .submenu {
+          position: absolute;
+          overflow: hidden;
+          top: 38px;
+          left: -40px;
+          height: 0;
+          width: 100%;
+          @include transiciones(height, 0.5s, ease-out);
+            li {
+            padding: 10px;
+            display: block;
+            text-align: center;
+            position: relative;
+            color: white;
+            list-style: none;
+            @include textoYbackground();
+            a {
+              color: white;
+              padding: 6px;
+              display: block;
+            }
+            &:hover{
+                @include textoYbackgroundHover();
+            }
+          }
+        }
+    &:hover {
+        @include textoYbackgroundHover();
+        .submenu {
+          display: block;
+          height: 200px;
+        }
+    }
+    }
+  }
+}

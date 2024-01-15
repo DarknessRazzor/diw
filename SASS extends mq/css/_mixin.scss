@@ -1,0 +1,33 @@
+@mixin textoYbackground {
+    color: $colorTexto;
+    background-color: $colorFondo;
+  }
+  @mixin textoYbackgroundHover {
+    color: $colorTextoHover;
+    background-color: $colorFondoHover;
+  }
+  @mixin tamanyoCaja($x) {
+    -webkit-box-sizing: $x;
+    -moz-box-sizing: $x;
+    box-sizing: $x;
+  }
+  @mixin transiciones($property, $duration, $timing: linear) {
+    -webkit-transition: $property, $duration, $timing;
+    -moz-transition: $property, $duration, $timing;
+    transition: $property, $duration, $timing;
+  }
+  @mixin animaciones($name, $duration, $timing: linear) {
+    -webkit-animation: $name, $duration, $timing;
+    -moz-animation: $name, $duration, $timing;
+    animation: $name, $duration, $timing;
+  }
+  @mixin responsivoMedio($propiedad, $valorPropiedad){
+    @media (max-width: 1024px){
+        #{$propiedad}: $valorPropiedad;
+    }
+  }
+  @mixin responsivoPequeño($propiedad, $valorPropiedad){
+    @media (max-width: 800px) {
+        #{$propiedad}: $valorPropiedad;
+    }
+  }
