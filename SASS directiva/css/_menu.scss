@@ -1,0 +1,43 @@
+nav#mobile {
+  display: none;
+  float: right;
+  ul {
+    margin: 0px;
+    height: 0px;
+    overflow: hidden;
+    list-style-type: none;
+    position: absolute;
+    right: 10px;
+    top: 40px;
+    &:hover ul {
+      height: auto;
+    }
+    a {
+      color: #eee;
+      background-color: #138;
+      text-decoration: none;
+      width: 160px;
+      padding: 7px 20px;
+      display: block;
+      text-align: center;
+      cursor: pointer;
+      font-size: 0.6em;
+      font-weight: normal;
+      &:hover {
+        color: white;
+        background-color: #1744b5;
+        -moz-animation: iluminar 0.4s linear;
+        -webkit-animation: iluminar 0.4s linear;
+        animation: iluminar 0.4s linear;
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  nav#mobile {
+    display: block;
+  }
+  #desktop {
+    display: none;
+  }
+}

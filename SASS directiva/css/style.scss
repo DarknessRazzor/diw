@@ -5,9 +5,21 @@ $colorFondo: #15a;
 $colorFondoHover: lighten(#15a, 10%);
 $colorTitulo: darken(#15a, 10%);
 
+$theme: dark;
+
+
 @import "mixin";
 @import "contenido";
-
+@import "menu";
+// @if $theme == dark{
+//   background-color: #138;
+// } @else {
+//   background-color: #ddf;
+//   color: #138;
+// }
+i{
+  display: inline-block;
+}
 footer {
     color: $colorTexto;
     background-color: $colorFondo;
