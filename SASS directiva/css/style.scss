@@ -11,12 +11,7 @@ $theme: dark;
 @import "mixin";
 @import "contenido";
 @import "menu";
-// @if $theme == dark{
-//   background-color: #138;
-// } @else {
-//   background-color: #ddf;
-//   color: #138;
-// }
+
 i{
   display: inline-block;
 }
@@ -34,10 +29,16 @@ header {
   color: black;
   background-color: #e4dcdc;
   font-size: 2em;
+  @if $theme == dark{
+    background-color: #138;
+  } @else {
+    background-color: #ddf;
+    color: #138;
+}
 
 }
-nav {
-background: $colorFondo;
+#desktop {
+
   ul {
     display: flex;
     justify-content: space-between;

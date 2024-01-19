@@ -47,9 +47,41 @@
   font-size: 1.6em;
 }
 
+.icon-menu {
+  background-image: url("../images/menu.png");
+  background-position: 0px 0px;
+  height: 30px;
+  width: 32px;
+}
+
+.icon-news {
+  background-image: url("../images/news.png");
+  background-position: 0px -90px;
+  height: 30px;
+  width: 39px;
+}
+
+.icon-money {
+  background-image: url("../images/money.png");
+  background-position: 0px -100px;
+  height: 50px;
+  width: 54px;
+}
+
+.icon-contact {
+  background-image: url("../images/contact.png");
+  background-position: 0px 0px;
+  height: 30px;
+  width: 30px;
+}
+
 nav#mobile {
   display: none;
   float: right;
+}
+nav#mobile:hover ul {
+  height: auto;
+  display: inline-block;
 }
 nav#mobile ul {
   margin: 0px;
@@ -59,16 +91,17 @@ nav#mobile ul {
   position: absolute;
   right: 10px;
   top: 40px;
+  text-decoration: none;
 }
-nav#mobile ul:hover ul {
+nav#mobile ul:hover a {
   height: auto;
+  display: block;
 }
 nav#mobile ul a {
   color: #eee;
   background-color: #138;
   text-decoration: none;
   width: 160px;
-  padding: 7px 20px;
   display: block;
   text-align: center;
   cursor: pointer;
@@ -76,6 +109,7 @@ nav#mobile ul a {
   font-weight: normal;
 }
 nav#mobile ul a:hover {
+  display: block;
   color: white;
   background-color: #1744b5;
   animation: iluminar 0.4s linear;
@@ -107,17 +141,15 @@ header {
   color: black;
   background-color: #e4dcdc;
   font-size: 2em;
+  background-color: #138;
 }
 
-nav {
-  background: #15a;
-}
-nav ul {
+#desktop ul {
   display: flex;
   justify-content: space-between;
   list-style: none;
 }
-nav ul .categoria {
+#desktop ul .categoria {
   position: relative;
   padding: 10px;
   width: 20%;
@@ -125,15 +157,15 @@ nav ul .categoria {
   color: #eee;
   background-color: #15a;
 }
-nav ul .categoria a {
+#desktop ul .categoria a {
   color: white;
   text-decoration: none;
 }
-nav ul .categoria a:hover {
+#desktop ul .categoria a:hover {
   color: white;
   background-color: #166cd8;
 }
-nav ul .categoria .submenu {
+#desktop ul .categoria .submenu {
   position: absolute;
   overflow: hidden;
   top: 38px;
@@ -142,7 +174,7 @@ nav ul .categoria .submenu {
   width: 100%;
   transition: height, 0.5s, ease-out;
 }
-nav ul .categoria .submenu li {
+#desktop ul .categoria .submenu li {
   padding: 10px;
   display: block;
   text-align: center;
@@ -152,20 +184,20 @@ nav ul .categoria .submenu li {
   color: #eee;
   background-color: #15a;
 }
-nav ul .categoria .submenu li a {
+#desktop ul .categoria .submenu li a {
   color: white;
   padding: 6px;
   display: block;
 }
-nav ul .categoria .submenu li:hover {
+#desktop ul .categoria .submenu li:hover {
   color: white;
   background-color: #166cd8;
 }
-nav ul .categoria:hover {
+#desktop ul .categoria:hover {
   color: white;
   background-color: #166cd8;
 }
-nav ul .categoria:hover .submenu {
+#desktop ul .categoria:hover .submenu {
   display: block;
   height: 200px;
 }/*# sourceMappingURL=style.css.map */

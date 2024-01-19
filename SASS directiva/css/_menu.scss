@@ -1,6 +1,10 @@
 nav#mobile {
   display: none;
   float: right;
+  &:hover ul {
+      height: auto;
+      display: inline-block;
+      }
   ul {
     margin: 0px;
     height: 0px;
@@ -9,21 +13,23 @@ nav#mobile {
     position: absolute;
     right: 10px;
     top: 40px;
-    &:hover ul {
+    text-decoration: none;
+    &:hover a {
       height: auto;
+      display: block;
     }
     a {
       color: #eee;
       background-color: #138;
       text-decoration: none;
       width: 160px;
-      padding: 7px 20px;
       display: block;
       text-align: center;
       cursor: pointer;
       font-size: 0.6em;
       font-weight: normal;
       &:hover {
+        display: block;
         color: white;
         background-color: #1744b5;
         -moz-animation: iluminar 0.4s linear;
