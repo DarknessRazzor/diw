@@ -1,0 +1,15 @@
+//Declaración de variables con sus respectivos datos asociados para trabajar con el resto de archivos, importaremos en los archivos donde queramos hacer uso de las variables con
+//@import "variables"
+$colorTexto: #eee;
+$colorTextoHover: lighten(#eee, 10%);
+
+$colorFondo: #15a;
+
+$colorFondoHover: lighten(#15a, 10%);
+$colorTitulo: darken(#15a, 10%);
+//Esta variable es la que usaremos para "cambiar" (de momento de forma manual) entre tema oscuro o tema día, de momento solo afecta al header
+$theme: dia;
+
+$colorGrisaceo: lighten(rgb(82, 85, 88), 20%);
+//Variable de suma de varios factores diferentes para dar otro tamaño de fuente distinto
+$ftamanyoFuente: 15px + 15pt;

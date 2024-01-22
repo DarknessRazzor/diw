@@ -1,0 +1,46 @@
+@mixin textoYbackground {
+    color: $colorTexto;
+    background-color: $colorFondo;
+  }
+  @mixin textoYbackgroundHover {
+    color: $colorTextoHover;
+    background-color: $colorFondoHover;
+  }
+  @mixin tamanyoCaja($x) {
+    -webkit-box-sizing: $x;
+    -moz-box-sizing: $x;
+    box-sizing: $x;
+  }
+  @mixin transiciones($property, $duration, $timing: linear) {
+    -webkit-transition: $property, $duration, $timing;
+    -moz-transition: $property, $duration, $timing;
+    transition: $property, $duration, $timing;
+  }
+  @mixin animaciones($name, $duration, $timing: linear) {
+    -webkit-animation: $name, $duration, $timing;
+    -moz-animation: $name, $duration, $timing;
+    animation: $name, $duration, $timing;
+  }
+  //Mixin de 3 parámetros para en este caso cambiar el radio, el color del texto y el background color de los input
+  @mixin colorInput ($radius, $color, $fondo){
+    border-radius: $radius;
+    color: $color;
+    background-color: $fondo;
+    }
+  //mixin responsive que acepta 3 tipos de parametros
+  //para pc(large), para movil(small) y para tabletas(medium)
+  @mixin responsivo($media){
+    @if ($media == small) {
+      @media(max-width: 800px){
+        @content
+      }
+    } @else if ($media == large){
+      @media(max-width: 1024px){
+        @content
+      }
+    } @else if ($media == medium){
+      @media (max-width: 350px){
+        @content
+      }
+    }
+  }

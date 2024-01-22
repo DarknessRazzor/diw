@@ -1,0 +1,7 @@
+//Fichero principal al que accedera el link del index.html para cargar y crear el css, de esta forma podemos tener archivos con código que no sea necesario que sea vea y 
+//con los nombres adecuados podemos ir directos a cambiar lo que queramos que sea necesario
+@import "mixin";
+@import "mobile";
+@import "desktop";
+@import "variables";
+@import "contenido";

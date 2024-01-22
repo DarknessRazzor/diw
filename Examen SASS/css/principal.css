@@ -1,0 +1,210 @@
+nav#mobile {
+  display: none;
+  float: right;
+}
+nav#mobile:hover ul {
+  height: auto;
+  display: inline-block;
+}
+nav#mobile ul {
+  margin: 0px;
+  height: 0px;
+  overflow: hidden;
+  list-style-type: none;
+  position: absolute;
+  right: 10px;
+  top: 40px;
+  text-decoration: none;
+}
+nav#mobile ul:hover a {
+  color: #84888c;
+  height: auto;
+  display: block;
+}
+nav#mobile ul a {
+  color: #eee;
+  background-color: #138;
+  text-decoration: none;
+  width: 160px;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  font-size: 0.6em;
+  font-weight: normal;
+}
+nav#mobile ul a:hover {
+  display: block;
+  color: white;
+  background-color: #1744b5;
+  animation: iluminar 0.4s linear;
+}
+
+@media (max-width: 1024px) {
+  nav#mobile {
+    display: block;
+  }
+  #desktop {
+    display: none;
+  }
+}
+i {
+  display: inline-block;
+}
+
+footer {
+  color: #eee;
+  background-color: #15a;
+  box-sizing: border-box;
+  font-size: 1em;
+  padding: 10px;
+  bottom: 5px;
+  width: 100%;
+}
+
+header {
+  color: black;
+  background-color: #e4dcdc;
+  font-size: 35px;
+  background-color: #ddf;
+  color: #138;
+}
+
+#desktop ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+#desktop ul .categoria {
+  position: relative;
+  padding: 10px;
+  width: 20%;
+  text-align: center;
+  color: #eee;
+  background-color: #15a;
+}
+#desktop ul .categoria a {
+  color: white;
+  text-decoration: none;
+}
+#desktop ul .categoria a:hover {
+  color: white;
+  background-color: #166cd8;
+}
+#desktop ul .categoria .submenu {
+  position: absolute;
+  overflow: hidden;
+  top: 38px;
+  left: -40px;
+  height: 0;
+  width: 100%;
+  transition: height, 0.5s, ease-out;
+}
+#desktop ul .categoria .submenu li {
+  padding: 10px;
+  display: block;
+  text-align: center;
+  position: relative;
+  color: white;
+  list-style: none;
+  color: #eee;
+  background-color: #15a;
+}
+#desktop ul .categoria .submenu li a {
+  color: white;
+  padding: 6px;
+  display: block;
+}
+#desktop ul .categoria .submenu li:hover {
+  color: white;
+  background-color: #166cd8;
+}
+#desktop ul .categoria:hover {
+  color: white;
+  background-color: #166cd8;
+}
+#desktop ul .categoria:hover .submenu {
+  display: block;
+  height: 200px;
+}
+
+#contenido .col-left button, #contenido .col-left {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+#contenido .col-left input, #contenido .col-left {
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 5px;
+  padding: 5px 10px;
+  text-align: center;
+}
+
+#contenido {
+  padding: 30px 20px;
+}
+#contenido .col-left {
+  box-sizing: border-box;
+  width: 30%;
+  float: left;
+  padding: 10px;
+}
+#contenido .col-left input {
+  border-radius: 12%;
+  color: green;
+  background-color: rgb(255, 255, 255);
+}
+#contenido .col-left .button-action {
+  background-color: #15a;
+  color: white;
+}
+#contenido .col-left .button-action:hover {
+  background-color: #3686eb;
+}
+@media (max-width: 350px) {
+  #contenido .col-left .button-action {
+    padding: 10px 20px;
+  }
+}
+#contenido .col-right {
+  box-sizing: border-box;
+  margin-left: 30%;
+  width: 70%;
+  padding: 10px;
+}
+#contenido .col-right h1 {
+  color: #0c3e7c;
+  font-size: 1.6em;
+}
+
+.icon-menu {
+  background-image: url("../images/menu.png");
+  background-position: 0px 0px;
+  height: 30px;
+  width: 32px;
+}
+
+.icon-news {
+  background-image: url("../images/news.png");
+  background-position: 0px -90px;
+  height: 30px;
+  width: 39px;
+}
+
+.icon-money {
+  background-image: url("../images/money.png");
+  background-position: 0px -100px;
+  height: 50px;
+  width: 54px;
+}
+
+.icon-contact {
+  background-image: url("../images/contact.png");
+  background-position: 0px 0px;
+  height: 30px;
+  width: 30px;
+}/*# sourceMappingURL=principal.css.map */

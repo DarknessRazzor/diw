@@ -1,0 +1,55 @@
+//Este es el nesting del mobile, teniendolo por separado para tener más visual el código y saber cuando tocar el de movil y cuando el de escritorio
+@import "variables";
+nav#mobile {
+  display: none;
+  float: right;
+  &:hover ul {
+      height: auto;
+      display: inline-block;
+      }
+  ul {
+    margin: 0px;
+    height: 0px;
+    overflow: hidden;
+    list-style-type: none;
+    position: absolute;
+    right: 10px;
+    top: 40px;
+    text-decoration: none;
+    &:hover a {
+//He añadido aqui el color más claro para que quede aun más visual ver en que opción estamos, al pasar por encima de la A, el resto de opciones se hacen grises y la principal 
+//a la que quieres acceder se vuelve blanca, solo pasa cuando el diseño está en modo móvil, osea cuando el menú se pliega y se tiene que desplegar mediante colocar 
+//el ratón en la imagen que aparece en la esquina superior derecha
+      color: $colorGrisaceo;
+      height: auto;
+      display: block;
+    }
+    a {
+      color: #eee;
+      background-color: #138;
+      text-decoration: none;
+      width: 160px;
+      display: block;
+      text-align: center;
+      cursor: pointer;
+      font-size: 0.6em;
+      font-weight: normal;
+      &:hover {
+        display: block;
+        color: white;
+        background-color: #1744b5;
+        -moz-animation: iluminar 0.4s linear;
+        -webkit-animation: iluminar 0.4s linear;
+        animation: iluminar 0.4s linear;
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  nav#mobile {
+    display: block;
+  }
+  #desktop {
+    display: none;
+  }
+}

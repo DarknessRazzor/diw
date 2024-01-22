@@ -1,0 +1,90 @@
+
+i{
+  display: inline-block;
+}
+footer {
+  color: $colorTexto;
+  background-color: $colorFondo;
+  @include tamanyoCaja(border-box);
+  font-size: 1em;
+  padding: 10px;
+  
+  bottom: 5px;
+  width: 100%;
+}
+header {
+  color: black;
+  background-color: #e4dcdc;
+  //He añadido un font-size para que el header se vea más resaltado que el resto de la página
+  font-size: $ftamanyoFuente;
+  //directiva usando if y else para cambiar el tono del header, en este caso si le pasamos la variable en modo dark saldrá un color y si no saldrá otro
+  @if $theme == dark{
+    background-color: #138;
+  } @else {
+    background-color: #ddf;
+    color: #138;
+}
+
+}
+//Ejemplo de nesting, donde cogemos toda la estructura del html que tiene que ver con el desktop y la nesteamos de forma que añadimos el formato que queremos
+//a cada uno de los elementos, el nesting sirve para tener más focalizado sobre el que estás trabajando, lo interesante del nesting es que puedes trabajar por bloques más
+//comodamente y más visual
+#desktop {
+  ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    .categoria {
+      position: relative;
+      padding: 10px;
+      width: 20%;
+      text-align: center;
+      @include textoYbackground();
+        a {
+          //En este caso hacemos un hover a la A, se pone el & para decir que haga hover a la A, es una forma de coger el padre, que en este caso es la a y añadir hover
+            &:hover {
+                @include textoYbackgroundHover();
+            }
+            color: white;
+            text-decoration: none;
+        }
+        .submenu {
+          position: absolute;
+          overflow: hidden;
+          top: 38px;
+          left: -40px;
+          height: 0;
+          width: 100%;
+          //Con el @include estamos cogiendo un mixin(en este caso) o una función que ya hemos definido previamente en el fichero _mixin.scss, al que le pasamos los parametros
+          //que necesitamos
+          @include transiciones(height, 0.5s, ease-out);
+            li {
+            padding: 10px;
+            display: block;
+            text-align: center;
+            position: relative;
+            color: white;
+            list-style: none;
+            @include textoYbackground();
+            a {
+              color: white;
+              padding: 6px;
+              display: block;
+            }
+            &:hover{
+              //Lo mismo para añadir colores tanto al texto como al background, luego es tan sencillo como ir a nuestro archivo donde tenemos las variables y cambiar el color 
+              //desde allí y se cambiará en todos los @include que tengan esa variable cambiada
+                @include textoYbackgroundHover();
+            }
+          }
+        }
+    &:hover {
+        @include textoYbackgroundHover();
+        .submenu {
+          display: block;
+          height: 200px;
+        }
+    }
+    }
+  }
+}
