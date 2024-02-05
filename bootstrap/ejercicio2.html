@@ -29,26 +29,33 @@
                     <div class="col " style="background-color: rgb(20, 241, 20); padding: 5px;">Header</div>
                 </div>
                 <div class="row">
-                    <div class="col-md-3 offset-md-3 me-1" style="background-color: lightskyblue; padding: 50px;">1</div>
-                    <div class="col-md-3" style="background-color: lightskyblue; padding: 50px;">2</div>
-                    <div class="col-md-3" style="background-color: lightskyblue; padding: 50px;">3</div>
-                    <div class="col-md-3 offset-md-6" style="background-color: lightskyblue; padding: 50px;">4</div>
+                    <div class="col-md-3 col-sm-3 offset-md-3 me-1 mb-2 col-6" style="background-color: lightskyblue; padding: 50px;">1</div>
+                    <div class="col-md-3 col-sm-3 me-1 mb-2 col" style="background-color: lightskyblue; padding: 50px;">2</div>
+                    <div class="col-md-3 col-sm-3 me-1 mb-2 col-6" style="background-color: lightskyblue; padding: 50px;">3</div>
+                    <div class="col-md-3 col-sm me-1 offset-md-6 mb-2 col" style="background-color: lightskyblue; padding: 50px;">4</div>
+                </div>
+                <div class="row d-md-none d-sm-block d-none">
+                    <div class="col" style="background-color: rgb(0, 236, 253);">Tablet</div>
                 </div>
                 <div class="row">
-                    <div class="col" style="background-color: lightslategray; padding: 50px; margin: 8px;">d</div>
-                    <div class="col" style="background-color: lightslategray; padding: 50px; margin: 8px">c</div>
-                    <div class="col" style="background-color: lightslategray; padding: 50px; margin: 8px">b</div>
-                    <div class="col" style="background-color: lightslategray; padding: 50px; margin: 8px">a</div>
+                    <div class="col-sm order-sm-4 col-6 order-4" style="background-color: lightslategray; padding: 50px; margin: 8px;">d</div>
+                    <div class="col-sm order-sm-3 col order-3" style="background-color: lightslategray; padding: 50px; margin: 8px">c</div>
+                    <div class="col-sm order-sm-2 col-6 order-2" style="background-color: lightslategray; padding: 50px; margin: 8px">b</div>
+                    <div class="col-sm order-sm-1 col order-1" style="background-color: lightslategray; padding: 50px; margin: 8px">a</div>
                 </div>
-                <div class="row">
+                <div class="row d-md-none d-sm-none">
+                    <div class="col" style="background-color: rgb(0, 236, 253); padding: 20px;">Mobile</div>
+                </div>
+                <div class="row d-sm-none d-md-block d-none">
                     <div class="col" style="background-color: rgb(0, 236, 253); padding: 20px;">Desktop</div>
                 </div>
+                <!-- mt MARGIN TOP me MARGIN RIGTH mb MARGIN BOTTOM ms MARGIN LEFT, en la p es lo mismo-->
                 <div class="row">
-                    <div class="col offset-md-1" style="background-color: rgb(241, 164, 20); padding: 50px; margin: 8px;">TRISTE</div>
-                    <div class="col" style="background-color: rgb(241, 164, 20); padding: 50px; margin: 8px;">FELIZ</div>
+                    <div class="col-md-3 col-sm offset-md-3 me-1 order-md-1 order-sm-2 d-none" style="background-color: rgb(241, 164, 20); padding: 50px;">TRISTE</div>
+                    <div class="col-md-3 col-sm-6 order-md-2 order-sm-1 mb-2 me-2" style="background-color: rgb(241, 164, 20); padding: 50px;">FELIZ</div>
                 </div>
                 <div class="row">
-                    <div class="col" style="background-color: rgb(20, 241, 20);">Footer</div>
+                    <div class="col d-none" style="background-color: rgb(20, 241, 20);">Footer</div>
                 </div>
             </div>
         </main>
