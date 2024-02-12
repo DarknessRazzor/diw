@@ -34,13 +34,14 @@
                                 <a class="nav-link active" href="forms.html">Pedidos</a>
                             </li>
                             <div class="row">
-                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Productos
-                                  </button>
-                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something else here</a>
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      Productos
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">Hombre</a></li>
+                                      <li><a class="dropdown-item" href="#">Mujer</a></li>
+                                    </ul>
                                   </div>
                             </div>
                         </ul>
@@ -49,36 +50,67 @@
             </div>
         <div id="container">
             <form role="form">
-				<div class="form-group">
-					 
-					<label for="exampleInputEmail1">
-						Email address
+                <br>
+                <div class="row">
+					<div class="col-2">
+					<label for="exampleInputNombre1">
+                        Nombre
 					</label>
-					<input type="email" class="form-control" id="exampleInputEmail1" />
-				</div>
-				<div class="form-group">
-					 
-					<label for="exampleInputPassword1">
-						Password
+					<input type="text" class="form-control" id="exampleInputNombre1" />
+                    </div> 
+                    <div class="col-2">
+					<label for="exampleInputApellido1">
+						1ºApellido
 					</label>
-					<input type="password" class="form-control" id="exampleInputPassword1" />
-				</div>
-				<div class="form-group">
-					 
-					<label for="exampleInputFile">
-						File input
-					</label>
-					<input type="file" class="form-control-file" id="exampleInputFile" />
-					<p class="help-block">
-						Example block-level help text here.
-					</p>
-				</div>
-				<div class="checkbox">
-					 
-					<label>
-						<input type="checkbox" /> Check me out
-					</label>
-				</div> 
+					<input type="text" class="form-control" id="exampleInputApellido1" />
+				    </div>
+                    <div class="col-2">
+                    <label for="exampleInputApellido2">
+                        2ºApellido
+                    </label>
+                    <input type="text" class="form-control" id="exampleInputApellido2" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <label for="exampleInputEmail">
+                            Correo electrónico:
+                        </label>
+                        <input type="email" class="form-control" id="exampleInputEmail" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <label for="exampleInputSelect">
+                            Seleccionar producto:
+                        </label>
+                        <br>
+                        <select class="form-select" multiple aria-label="Default select example" id="exampleInputSelect">
+                            <option value="1">Producto 1</option>
+                            <option value="2">Producto 2</option>
+                            <option value="3">Producto 3</option>
+                          </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <label for="exampleColorInput" class="form-label">Elige color del envoltorio</label>
+                        <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <label for="customRange1" class="form-label">Cantidad de producto (1-5)</label>
+                        <input type="range" class="form-range" id="customRange1" min="1" max="5">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <label for="formFile" class="form-label">Default file input example</label>
+                        <input class="form-control" type="file" id="formFile">
+                    </div>
+                </div>
+                <br>
 				<button type="submit" class="btn btn-primary">
 					Submit
 				</button>
