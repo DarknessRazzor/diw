@@ -1,0 +1,102 @@
+a {
+    text-decoration: none;
+    color: #ffae00;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+footer {
+    margin-top: auto;
+    width: 100%;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 20px 0;
+}
+.pie{
+    text-align: center;
+}
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+ul {
+    text-decoration: none;
+    list-style: none;
+}
+.custom-row {
+    justify-content: center;
+    gap: 50px; /* Espacio entre las tarjetas */
+}
+.card {
+    max-width: 600px; /* Ancho máximo de las tarjetas */
+}
+form {
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 20px;
+}
+table.default {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd; /* Borde de la tabla */
+  }
+  
+  /* Estilo de las celdas de encabezado */
+  table.default th {
+    background-color: #f2f2f2; /* Color de fondo del encabezado */
+    padding: 8px; /* Espaciado interno */
+    border: 1px solid #ddd; /* Borde de las celdas */
+    text-align: left; /* Alineación del texto */
+  }
+  
+  /* Estilo de las celdas de datos */
+  table.default td {
+    padding: 8px; /* Espaciado interno */
+    border: 1px solid #ddd; /* Borde de las celdas */
+  }
+  
+  /* Estilo de las filas impares */
+  table.default tr:nth-child(odd) {
+    background-color: #f9f9f9; /* Color de fondo de las filas impares */
+  }
+  
+  /* Estilo para resaltar la fila al pasar el ratón */
+  table.default tr:hover {
+    background-color: #f2f2f2; /* Color de fondo al pasar el ratón */
+  }
+  #contenedorProductos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#producto {
+    flex: 0 0 calc(25% - 20px); /* Dos columnas en dispositivos de pantalla ancha */
+    max-width: calc(50% - 20px);
+}
+@media (max-width: 1200px) {
+  /* En dispositivos con ancho máximo de 1200px, tres columnas */
+  #producto {
+      flex: 0 0 calc(33.33% - 20px);
+      max-width: calc(33.33% - 20px);
+  }
+}
+@media (max-width: 992px) {
+  /* En dispositivos con ancho máximo de 992px, dos columnas */
+  #producto {
+      flex: 0 0 calc(50% - 20px);
+      max-width: calc(50% - 20px);
+  }
+}
+@media (max-width: 576px) {
+  /* En dispositivos con ancho máximo de 576px, una columna */
+  #producto {
+      flex: 0 0 100%;
+      max-width: 100%;
+  }
+}
